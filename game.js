@@ -4,12 +4,13 @@ var guess3;
 var j=0;
 var k=0;
 var l=0;
-var counter=[0,0,0];
+var m=0;
+var counter=[0,0,0,0];
 var score;
 
 var name = prompt("Welcome to the guessing game! What is your name?");
 alert("Welcome, " + name + "!");
-alert('Rules: answers must be "yes" or "no", all lowercase.');
+alert('Rules: answers must be "yes" or "no".');
 while(j===0){
 	guess1 = prompt("Am I 19 years old?");
 	alert("Your answer was: "+guess1);
@@ -58,8 +59,26 @@ while(l===0){
 		alert("Invalid input!");
 	}
 }
-score=counter[0]+counter[1]+counter[2];
-alert("You got " + score + " out of 3 correct");
+while(m===0){
+	guess4 = prompt("Do I play soccer?");
+	/*not sure what numeric-answer question was (did we cover that?) so
+	here's a normal y/n question instead. Sorry... */
+	alert("Your answer was: "+guess4);
+	if(guess4==="yes"||guess4==="Yes"||guess4==="YES"||guess4==="Y"||guess4==="y"){
+		alert("Nice try "+name+". I play tennis but not soccer.");
+		m=1;
+	}
+	else if(guess4==="no"||guess4==="No"||guess4==="NO"||guess4==="N"||guess4==="n"){
+		alert("Good job "+name+"! I don't play soccer.");
+		counter[3]=1;
+		m=1;
+		}
+	else{
+		alert("Invalid input!");
+	}
+}
+score=counter[0]+counter[1]+counter[2]+counter[3];
+alert("You got " + score + " out of 4 correct");
 /*
 if(counter[0]===0){
 	alert("I am 18, not 19.");
