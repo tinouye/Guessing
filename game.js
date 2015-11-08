@@ -69,10 +69,10 @@ while(j===0){
 	console.log(isCorrect);
 }
 	if(isCorrect===true){
-		alert("Nice one, "+name+"! I am actually 18.");
+		document.getElementById('q1').innerHTML="Nice one, "+name+"! I am actually 18.";
 	}
 	else if(isCorrect===false){
-		alert("Sorry "+name+", but I am actaully 18.");
+		document.getElementById('q1').innerHTML="Sorry "+name+", but I am actaully 18.";
 	}
 j=0;
 
@@ -82,10 +82,10 @@ while(j===0){
 	yesNo(guess2,true);
 }
 	if(isCorrect===true){
-		alert("Nice job, "+name+"! I am indeed from Tokyo, Japan!");
+		document.getElementById('q2').innerHTML="Nice job, "+name+"! I am indeed from Tokyo, Japan!";
 	}
 	else if(isCorrect===false){
-		alert("Too bad, "+name+". I am indeed from Tokyo, Japan.");
+		document.getElementById('q2').innerHTML="Too bad, "+name+". I am indeed from Tokyo, Japan.";
 	}
 j=0;
 
@@ -94,10 +94,10 @@ while(j===0){
 	yesNo(guess3,true);
 }
 	if(isCorrect===true){
-		alert("Good guess, "+name+"! I am, in fact, allergic to peanuts.");
+		document.getElementById('q3').innerHTML="Good guess, "+name+"! I am, in fact, allergic to peanuts.";
 	}
 	else if(isCorrect===false){
-		alert("Sorry "+name+", but I am, in fact, allergic to peanuts.");
+		document.getElementById('q3').innerHTML="Sorry "+name+", but I am, in fact, allergic to peanuts.";
 	}
 j=0;
 
@@ -106,13 +106,13 @@ while(j===0){
 	yesNo(guess4,2);
 }
 	if(isCorrect===true){
-		alert("Correct! I speak English and Japanese.");
+		document.getElementById('q4').innerHTML="Correct! I speak English and Japanese.";
 	}
 	else if(isCorrect==="tooSmall"){
-		alert("Actually, I speak two languages: English and Japanese.");
+		document.getElementById('q4').innerHTML="Actually, I speak two languages: English and Japanese.";
 	}
 	else if(isCorrect==="tooBig"){
-		alert("Sorry, I only speak two languages: English and Japanese.");
+		document.getElementById('q4').innerHTML="Sorry, I only speak two languages: English and Japanese.";
 	}
 j=0;
 
@@ -121,10 +121,10 @@ while(j===0){
 	yesNo(guess5,false);
 }
 	if(isCorrect===false){
-		alert("Nice try "+name+". I play tennis but not soccer.");
+		document.getElementById('q5').innerHTML="Nice try "+name+". I play tennis but not soccer.";
 	}
 	else if(isCorrect===true){
-		alert("Good job "+name+"! I don't play soccer.");
+		document.getElementById('q5').innerHTML="Good job "+name+"! I don't play soccer.";
 	}
 j=0;
 
@@ -134,15 +134,15 @@ while(j===0){
 	yesNo(guess6,0);
 }
 	if(isCorrect===true){
-		alert("That's right! I have no cats.");
+		document.getElementById('q6').innerHTML="That's right! I have no cats.";
 	}
 	else if(isCorrect!=true){
-		alert("I actually don't own any cats.");
+		document.getElementById('q6').innerHTML="I actually don't own any cats.";
 	}
 j=0;
 
 
-alert("You got " + counter + " out of 6 correct");
+//alert("You got " + counter + " out of 6 correct");
 
 
 /*
